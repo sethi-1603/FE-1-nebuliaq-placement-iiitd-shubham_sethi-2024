@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Service Metrics Fat Table
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project implements a dynamic web table that displays service metrics in a consolidated "fat row" format. Each service's client and server metrics are grouped together into rows with two sub-rows representing the client and server sides. The table supports filtering and sorting functionalities, making it easy to analyze and compare service performance metrics.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Fat Row Format**: Displays client and server metrics for each service in a consolidated view.
+- **Filtering**: Allows filtering by service name or side (client/server).
+- **Sorting**: Enables sorting using any provided metrics on the client or server sides.
+- **Responsive Design**: Ensures the table performs well and looks good on various screen sizes.
+- **Large Dataset Support**: Optimized to handle and display large amounts of data efficiently.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React.js
+- react-table library
 
-### `npm test`
+## Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Before you begin, ensure you have met the following requirements:
 
-### `npm run build`
+- Node.js (v12.0.0 or later)
+- npm (v6.0.0 or later)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+2. Navigate to the project directory:
+3. Install the dependencies:
+   
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the application in development mode:
 
-### `npm run eject`
+This will start the development server. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `src/App.js`: The main application component.
+- `src/FatTable.js`: The fat table component implementation.
+- `src/data.js`: Sample data for the table.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Customization
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Adding More Data
 
-## Learn More
+To add more data to the table, edit the `src/data.js` file. Follow the existing data structure:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```javascript
+{
+  service: "service-name",
+  client: {
+    requests: number,
+    rate: string,
+    p75: string,
+    p90: string,
+    p99: string,
+    error: string
+  },
+  server: {
+    // Same structure as client
+  }
+}
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This will start the development server. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Code Splitting
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- `src/App.js`: The main application component.
+- `src/FatTable.js`: The fat table component implementation.
+- `src/data.js`: Sample data for the table.
 
-### Analyzing the Bundle Size
+##Contact 
+If you want to contact me, you can reach me at <shubham22071@iiitd.ac.in>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+thanks
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
