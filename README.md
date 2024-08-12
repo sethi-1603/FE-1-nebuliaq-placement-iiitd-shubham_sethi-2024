@@ -1,3 +1,8 @@
+
+## Contact 
+If you want to contact me, you can reach me at <shubham22071@iiitd.ac.in>
+
+thanks
 # Service Metrics Fat Table
 
 ## Overview
@@ -66,16 +71,8 @@ To add more data to the table, edit the `src/data.js` file. Follow the existing 
 
 This will start the development server. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Project Structure
 
-- `src/App.js`: The main application component.
-- `src/FatTable.js`: The fat table component implementation.
-- `src/data.js`: Sample data for the table.
 
-##Contact 
-If you want to contact me, you can reach me at <shubham22071@iiitd.ac.in>
-
-thanks
 
 
 
